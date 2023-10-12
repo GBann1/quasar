@@ -9,9 +9,14 @@ Before we dive in to the actual development, we need to do some preparation work
 
 ### Android setup
 
-* You will need to install Android Studio and the Android platform SDK on your machine. You can [download the Android Studio here](https://developer.android.com/studio/index.html) and follow these [installation steps](https://developer.android.com/studio/install.html) afterwards.
+* You will need to install Android Studio and the Android platform SDK on your machine. You can [download the Android Studio here](https://developer.android.com/studio/index.html) and follow these [installation steps]
+* (https://developer.android.com/studio/install.html) afterwards.
 
 * Make sure that after you install the Android SDK you then accept its licenses. Open the terminal and go to the folder where the SDK was installed, in tools/bin and call `sdkmanager --licenses`.
+
+::: warning
+  The `sdkmanager --licenses` step is no longer needed [if using Android Studio](https://developer.android.com/tools/sdkmanager#:~:text=If%20you're%20using%20Android%20Studio%2C%20then%20you%20don't%20need%20to%20use%20this%20tool%2C%20and%20you%20can%20instead%20manage%20your%20SDK%20packages%20from%20the%20IDE.). Also note `tool/bin` no longer exist by default. Although unnecessary, you can enable it by [opening Andriod Studio and adding in an obsolete package "Android SDK Tools"](https://stackoverflow.com/questions/28789556/android-studio-sdk-tools-directory-is-missing)
+:::
 
 ::: warning
 The environmental variable `ANDROID_HOME` has been deprecated and replaced with `ANDROID_SDK_ROOT`. Depending on your version of Android Studio you may need one or the other. It doesn't hurt to have both set.
